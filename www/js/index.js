@@ -3,11 +3,11 @@
 $(document).on("pagecreate","#pageone",function(){
   
   	$('#tapholdtext').on("taphold",function(){
-    	$(this).hide();
+    	$(this).css('opacity', '0');
  	});                       
 
 	$('#taptext').on("tap",function(){
-    	alert("Stop tapping!");
+    	$(this).css('color', 'red');
  	}); 
 
 	$('#swipetext').on("swipeleft",function(){
