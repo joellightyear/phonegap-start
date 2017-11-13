@@ -1,5 +1,4 @@
 
-
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
@@ -57,8 +56,8 @@ $(document).on("pagecreate","#pageone",function(){
  	}); 
 
 });
+*/
 
 function random() {
 	return !Math.round(Math.random());
 }
-*/
