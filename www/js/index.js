@@ -1,18 +1,10 @@
 <!-- For more info on jQuery Mobile,  touch gestures and other useful events see : http://api.jquerymobile.com/category/events/ -->
 
-$(document).on("pagecreate","#pageone",function(){
-  
-  	$('#tapholdtext').on("taphold",function(){
-    	$(this).css('opacity', '0');
- 	});                       
+$(document).on("pagecreate","#pageone",function(){                     
 
 	$('#taptext').on("tap",function(){
-    	$(this).css('color', 'red');
+    	$(this).getElementById("taptext").innerHTML = !Math.round(Math.random()).toString();
+        
  	}); 
-
-	$('#swipetext').on("swipeleft",function(){
-    	$(this).css('color', 'green');
-  	});   
-
 
 });
