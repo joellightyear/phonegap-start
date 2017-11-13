@@ -9,7 +9,7 @@ $(document).on("pagecreate","#pageone",function(){
     
     alert("alert test");
 
-    navigator.notification.beep(1);
+//    navigator.notification.beep(1);
     
 	$('#taptext').on("tap",function(){
         
@@ -19,11 +19,11 @@ $(document).on("pagecreate","#pageone",function(){
         
         if (randBool == true) {
 
-            navigator.notification.beep(1);
+//            navigator.notification.beep(1);
             
             } else {
    
-            navigator.notification.beep(2);
+//            navigator.nostification.beep(2);
                 
         }
         
