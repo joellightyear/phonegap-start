@@ -3,8 +3,25 @@
 $(document).on("pagecreate","#pageone",function(){                     
 
 	$('#taptext').on("tap",function(){
-    	$(this).getElementById("taptext").innerHTML = !Math.round(Math.random()).toString();
+        
+        var randBool = random()
+  
+       $("#taptext").html(randBool.toString());
+        
+        if (randBool == true) {
+
+            navigator.notification.beep(1);
+            
+            } else {
+   
+            navigator.notification.beep(2);
+                
+        }
         
  	}); 
 
 });
+
+function random() {
+	return !Math.round(Math.random());
+}
