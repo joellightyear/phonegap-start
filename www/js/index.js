@@ -18,11 +18,12 @@ $(document).on("pagecreate","#pageone",function(){
        $("#taptext").html(randBool.toString());
         
         if (randBool == true) {
-
+            
+            alert("true");
             navigator.notification.beep(1);
             
             } else {
-   
+               alert("false");
             navigator.nostification.beep(2);
                 
         }
