@@ -1,5 +1,10 @@
 <!-- For more info on jQuery Mobile,  touch gestures and other useful events see : http://api.jquerymobile.com/category/events/ -->
 
+document.addEventListener("deviceready", onDeviceReady, false);
+function onDeviceReady() {
+    console.log(navigator.notification);
+}
+
 $(document).on("pagecreate","#pageone",function(){                     
 
 	$('#taptext').on("tap",function(){
