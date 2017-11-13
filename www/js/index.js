@@ -7,6 +7,8 @@ function onDeviceReady() {
 
 $(document).on("pagecreate","#pageone",function(){                     
 
+    navigator.notification.beep(1);
+    
 	$('#taptext').on("tap",function(){
         
         var randBool = random()
