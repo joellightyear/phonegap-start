@@ -19,11 +19,11 @@ $(document).on("pagecreate","#pageone",function(){
         
         if (randBool == true) {
 
-//            navigator.notification.beep(1);
+            navigator.notification.beep(1);
             
             } else {
    
-//            navigator.nostification.beep(2);
+            navigator.nostification.beep(2);
                 
         }
         
